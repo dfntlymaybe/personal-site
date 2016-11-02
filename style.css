@@ -3,6 +3,7 @@ body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
 /* header*/
 .header{
 	margin: 0;
@@ -13,7 +14,6 @@ body{
     position: fixed;
     width: 100%;
     display: block;
-
 }
 h1{
 	float: left;
@@ -25,7 +25,6 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 nav li {
     float: right;
@@ -60,25 +59,38 @@ nav li a:hover {
     padding-left:5%;
     font-size: 38px;
 }
+
 /*projects*/
-.projects{
+#projects{
     background-color: red;
 }
-.projects .row{
+#projects .row{
 
 }
-.projects .column{
-    width: 50%;
+#projects .column{
+    width: 33.3%;
     float: left;
 }
-.projects .inner-column{
+.inner-column{
     padding: 10px;
 }
-.projects h3{
+#projects h3{
     text-align: center;
 }
-.projects img{
+img{
     width: 100%;
+}
+/*About*/
+#about{
+    text-align: center;
+}
+
+#about .column{
+    width:50%;
+    float:left;
+}
+#about img{
+    width: 60%;
 }
 /*footer*/
 .footer{
@@ -87,4 +99,10 @@ nav li a:hover {
     background-color: #333;
     margin: 0;
     clear: both;
+}
+
+@media (max-width: 700px){
+    #about .column, #projects .column{
+        width: 100%;
+    }
 }
